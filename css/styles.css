@@ -1,0 +1,379 @@
+:root {
+  --orange: #ffcb08;
+  --white: #fff;
+  --black: rgb(8, 8, 8);
+  --gray: #c5c5c5;
+  --dark-gray: rgba(0, 0, 0, 0.54);
+  --light-black: #333;
+  --cover: rgba(0, 0, 0, 0.7);
+  --font-family: "Noto Sans Sora Sompeng", Sans-serif;
+  --font-size-medium: 2rem;
+  --font-size-small: 1.25rem;
+  --font-size-smaller: 1.125rem;
+  --font-size-x-smaller: 1rem;
+  --font-size-large: 3rem;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: var(--black);
+  font-family: var(--font-family);
+}
+.header {
+  background-size: cover;
+  background-position: center;
+  background-image: url(../img/madeira.jpg);
+  z-index: 8;
+  position: relative;
+  height: 70vh;
+}
+.capa {
+  background: var(--cover);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+.logo {
+  padding: 2.5rem 0 2rem 0;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  width: 100%;
+  z-index: 99;
+  position: relative;
+}
+.banner {
+  display: flex;
+  width: 100%;
+}
+.banner-content {
+  width: 80%;
+  display: flex;
+  z-index: 99;
+  position: relative;
+  margin: auto;
+}
+.banners-contact {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  column-gap: 2rem;
+  padding: 0 0 0 8rem;
+}
+.banners-info {
+  width: 50%;
+  color: var(--white);
+  font-size: var(--font-size-x-smaller);
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+.banners-content {
+  width: 80%;
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+}
+.banner-title {
+  color: var(--white);
+  font-size: var(--font-size-medium);
+  font-weight: 500;
+  padding: 0.5rem 0;
+}
+.banner-description {
+  text-decoration: none;
+  color: var(--gray);
+  padding: 1rem 0;
+  display: flex;
+  font-size: var(--font-size-small);
+  font-weight: 600;
+}
+.info-banner {
+  font-weight: 600;
+  padding: 0.5rem 16rem 2rem 2rem;
+}
+.btn {
+  background: var(--orange);
+  border-radius: 10px;
+  text-decoration: none;
+  color: var(--black);
+  align-items: center;
+  display: flex;
+  width: 58%;
+  padding: 0.5rem 1rem;
+  column-gap: 1rem;
+  font-size: var(--font-size-smaller);
+  font-weight: 500;
+}
+.img-btn {
+  display: flex;
+  margin: auto;
+}
+.card {
+  background: var(--white);
+  padding: 2rem 0;
+  width: 100%;
+  display: flex;
+  height: 110vh;
+}
+.card-content {
+  margin: auto;
+  width: 90%;
+  font-size: x-large;
+  color: var(--light-black);
+}
+.card-texts {
+  display: flex;
+  width: 100%;
+}
+
+.card-text {
+  width: 50%;
+  padding: 0 5rem 0 16rem;
+  font-size: var(--font-size-medium);
+}
+.card-span {
+  width: 50%;
+  padding: 2rem 18rem 0 14rem;
+  font-size: var(--font-size-x-smaller);
+  font-weight: 300;
+}
+.cards {
+  width: 100%;
+  height: 100%;
+  gap: 2px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0.3rem 14rem;
+  margin: 4rem auto;
+}
+.card-img {
+  width: 300px;
+  height: 300px;
+  margin: 2rem 2rem;
+}
+.img-card {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: flex;
+}
+.contact {
+  height: 35vh;
+}
+.contact-content {
+  width: 100%;
+  display: flex;
+}
+.contact-text {
+  width: 50%;
+  color: var(--orange);
+  padding: 7.5rem 0 5rem 19rem;
+  font-size: var(--font-size-small);
+  margin-right: 1rem;
+  font-weight: 600;
+}
+.contact-img {
+  width: 50%;
+}
+.btn-contact {
+  background: var(--orange);
+  border-radius: 10px;
+  border: none;
+  text-decoration: none;
+  padding: 0.6rem 0.5rem;
+  font-size: var(--font-size-smaller);
+  font-weight: 500;
+  margin: 7rem 0 0 8rem;
+  cursor: pointer;
+}
+.img-whatsapp {
+  text-decoration: none;
+  color: var(--black);
+  align-items: center;
+  display: flex;
+}
+.introduction {
+  background-image: url(../img/piso-madeira.webp);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.introduction-content {
+  width: 100%;
+  display: flex;
+  color: var(--white);
+  z-index: 99;
+  position: relative;
+}
+.img-introduction {
+  width: 50%;
+  padding: 9rem 0 6rem 20rem;
+  z-index: 99;
+}
+.introduction-text {
+  width: 50%;
+}
+.introduction-title {
+  padding: 7rem 25rem 0 2rem;
+  font-size: var(--font-size-medium);
+}
+.text-introduction {
+  padding: 2rem 25rem 9rem 2rem;
+  font-size: var(--font-size-small);
+}
+.testimonial {
+  background: var(--white);
+}
+.testimonial-content {
+  width: 100%;
+  flex-direction: column;
+}
+.testimonial-title {
+  width: 100%;
+  padding: 5rem 0 4rem 22rem;
+  font-size: var(--font-size-large);
+  font-weight: 600;
+  color: var(--light-black);
+}
+.testimonial-subtitle {
+  padding: 0 0 2.5rem 22rem;
+  color: var(--dark-gray);
+  font-weight: 500;
+  font-size: var(--font-size-small);
+}
+.description {
+  width: 100%;
+  font-size: var(--font-size-x-smaller);
+  padding: 2rem 0 2rem 0;
+  background: var(--light-black);
+}
+.description-content {
+  width: 70%;
+  margin: 2rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5rem 3rem;
+}
+.descripions-card {
+  width: calc(40% - 20px);
+  max-width: 40%;
+  height: 15rem;
+  padding: 2.5rem 2rem;
+  background: var(--white);
+  font-family: var(--font-body);
+  border-radius: 0.2rem;
+  display: flex;
+  row-gap: 4rem;
+  flex-direction: column;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.star {
+  justify-content: end;
+  display: flex;
+}
+.address {
+  width: 100%;
+}
+.address-content {
+  display: flex;
+  width: 90%;
+  color: var(--white);
+}
+.address-img {
+  width: 35%;
+  justify-content: end;
+  padding: 1.5rem 3rem 1.5rem 0;
+  display: flex;
+}
+.address-location {
+  width: 17.5%;
+}
+.address-contact {
+  width: 17.5%;
+}
+.address-schedules {
+  width: 20%;
+}
+.address-subtitle {
+  padding: 2.5rem 2rem 2rem 3rem;
+  font-size: var(--font-size-small);
+}
+.address-text {
+  font-size: var(--font-size-x-smaller);
+  padding: 0 2.3rem 1rem 3rem;
+  font-weight: 600;
+}
+@media only screen and (max-width: 600px) {
+  .header {
+    height: 55vh;
+  }
+  .logo img {
+    width: 30%;
+    height: 70%;
+  }
+  .content {
+    justify-content: center;
+    display: flex;
+  }
+  .blc-left {
+  }
+  .blc-right {
+    display: none;
+  }
+  .txt {
+    font-weight: 600;
+    font-size: small;
+    padding: 0 2px 10px 2px;
+    margin: 2%;
+  }
+  .text {
+    padding: 0.5rem 0 1rem 0.5rem;
+    font-size: smaller;
+  }
+  .btn {
+    margin: 2px 25px;
+    font-size: x-small;
+    font-weight: 500;
+    align-items: center;
+    display: flex;
+  }
+  .card {
+  }
+  .contact {
+    height: 25vh;
+  }
+  .contact-content {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-text {
+    padding: 3rem 0 1.5rem 4rem;
+    font-size: x-small;
+    font-weight: 600;
+    width: 100%;
+  }
+  .contact-img {
+  }
+  .btn-contact {
+    width: 100%;
+    padding: 13px 7.5px;
+    /* align-items: center;
+    display: flex; */
+    margin: 2px 2px;
+    font-weight: 500;
+    font-size: x-small;
+  }
+  .introduction {
+  }
+}
